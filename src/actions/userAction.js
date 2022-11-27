@@ -8,7 +8,6 @@ import {
 import config from "../utils/app-config";
 
 export const singin = (email, password) => async (dispatch) => {
-  console.log("aaua");
   dispatch({ type: USER_SINGIN_REQUEST, payload: { email, password } });
   try {
     const { data } = await axios.post(`${config.endpoint}/auth/login`, {
@@ -28,8 +27,7 @@ export const singin = (email, password) => async (dispatch) => {
   }
 };
 
-export const singout = (aaya) => (dispatch) => {
-  console.log(aaya);
+export const singout = () => (dispatch) => {
   localStorage.removeItem("userInfo");
   dispatch({ type: USER_SINGOUT });
   window.location.reload();
