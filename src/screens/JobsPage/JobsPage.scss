@@ -1,0 +1,107 @@
+@import "../../common-scss/index";
+
+.job-container {
+  margin: 0 95px;
+  height: 100vh;
+  .pagination {
+    margin: 20px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-bottom: -10px;
+    }
+  }
+  .head-content {
+    color: $clr-background;
+    margin-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: $clr-background;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    span {
+      font-size: 13px;
+    }
+  }
+  .job-card {
+    @include flexBox(space-between);
+    flex-wrap: wrap;
+    margin-top: 35px;
+    .empty-jobs {
+      width: -webkit-fill-available;
+      text-align: center;
+      align-items: center;
+      margin-top: 130px;
+      h1 {
+        font-size: 20px;
+        font-weight: 400;
+        opacity: 0.7;
+      }
+      .primary {
+        margin-top: 40px;
+      }
+      img {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .card {
+    width: 270px;
+    height: 162px;
+    padding: 15px;
+    margin-bottom: 10px;
+    .card-header {
+      h4 {
+        font-size: 17px;
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .card-body {
+      p {
+        font-size: 14px;
+        font-weight: 200;
+        margin-top: 5px;
+      }
+    }
+    .card-footer {
+      @include flexBox(space-between);
+      align-items: center;
+      p {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .signin-modal {
+    .modal-box {
+      .box {
+        height: auto;
+        border-radius: 5px;
+        width: 343px;
+        .close-icon {
+          right: calc(44% - 69px);
+        }
+      }
+    }
+    h2 {
+      font-size: 24px;
+      color: $clr-secondary;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 17px;
+      opacity: 0.7;
+    }
+  }
+}

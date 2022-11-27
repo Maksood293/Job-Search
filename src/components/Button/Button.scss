@@ -1,0 +1,59 @@
+@import "../../common-scss/index";
+
+button {
+  display: inline-flex;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.5;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  & span {
+    flex: auto;
+    align-self: center;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+.primary {
+  background-color: $clr-secondary;
+  color: $clr-neutral;
+}
+.outline {
+  padding: 9px 35px;
+  background-color: #2f86a74d;
+  border: 2px solid $clr-secondary;
+  color: $clr-neutral;
+}
+.light {
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: $clr-background;
+  color: $clr-primary;
+  padding: 7px 14px;
+}
+.white {
+  background: $clr-neutral;
+  color: $clr-primary;
+}

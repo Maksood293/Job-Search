@@ -1,0 +1,27 @@
+@import "../../common-scss/index";
+
+
+.modal-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  .box {
+    position: relative;
+    width: 640px;
+    height: 731px;
+    margin: 0 auto;
+    margin-top: calc(100vh - 85vh - 83px);
+    background: $clr-neutral;
+    border-radius: 15px;
+    padding: 26px;
+    .close-icon {
+      cursor: pointer;
+      position: fixed;
+      right: calc(34% - 69px);
+      top: calc(100vh - 85vh - 65px);
+    }
+  }
+}

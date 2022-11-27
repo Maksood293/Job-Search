@@ -1,0 +1,77 @@
+@import "../../common-scss/index";
+
+@mixin flex-property {
+  @include flexBox(space-around)
+  
+}
+
+.main-container {
+  .container {
+    @include flex-property;
+    img {
+      width: 622px;
+      height: 395px;
+    }
+  }
+  .content {
+    margin-left: 50px;
+    margin-top: 10px;
+    .primary {
+      margin-top: 20px;
+      a {
+        text-decoration: none;
+        color: $clr-background;
+      }
+    }
+    h1 {
+      font-size: 60px;
+      color: $clr-background;
+      line-height: 80px;
+    }
+    .welcome {
+      font-weight: 400;
+    }
+    .jobs {
+      color: $clr-secondary;
+    }
+  }
+
+  .card-container {
+    .why-us {
+      margin-left: 130px;
+      font-size: 22px;
+    }
+    .cards {
+      @include flex-property;
+      margin: 40px 121px;
+      .card {
+        max-width: 341px;
+        height: 192px;
+        h1 {
+          width: 140px;
+          font-size: 22px;
+          font-weight: unset;
+          margin-bottom: 40px;
+          color: $clr-secondary;
+        }
+        p {
+          font-size: 14px;
+          width: 275px;
+        }
+      }
+    }
+  }
+  .footer-container {
+    margin: 55px 140px;
+    p {
+      font-size: 22px;
+      margin-bottom: 22px;
+    }
+    .company {
+      @include flexBox(space-between)
+    }
+    .company2 {
+      @include flex-property;
+    }
+  }
+}

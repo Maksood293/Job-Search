@@ -1,0 +1,20 @@
+@import "../../common-scss/index";
+
+.login {
+  height: 100%;
+  @include flexBox(center);
+  align-items: center;
+  overflow-x: hidden;
+  padding-bottom: 220px;
+  .card {
+    height: 427px;
+  }
+  h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .login-button {
+    text-align: center;
+  }
+}

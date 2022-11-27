@@ -1,0 +1,80 @@
+@import "../../../common-scss/index";
+@mixin box-property {
+  padding: 10px;
+  background: $clr-primary-four;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 600px;
+  overflow-y: scroll;
+  font-size: Helvetica Neue;
+}
+.application-card {
+  @include box-property;
+  justify-content: space-between;
+  .card {
+    box-shadow: none;
+    border: 1px solid $clr-primary;
+    border-radius: 5px;
+  }
+  .card-header {
+    @include flexBox(space-around);
+    margin-bottom: 20px;
+    .user-data {
+      h3,
+      p {
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 400;
+      }
+      p {
+        font-weight: 300;
+      }
+    }
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      text-align: center;
+      background: $clr-primary-five;
+      padding-top: 13px;
+    }
+  }
+  .card-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 20px;
+    h3 {
+      font-size: 13px;
+      font-weight: 400;
+    }
+    p {
+      font-size: Helvetica Neue;
+      margin-top: 5px;
+      font-weight: 300;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+.empty-card {
+  @include box-property;
+  height: 600px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  img {
+    margin-bottom: 19px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+.header-title {
+  padding-bottom: 12px;
+  border-bottom: 1px solid $clr-primary;
+}
