@@ -32,7 +32,6 @@ export const Login = (props) => {
     setUserData((prev) => ({ ...prev, email: "", password: "" }));
   };
 
-  //"squareboat@gmail.com", "squareboat"
   useEffect(() => {
     if (userInfo) {
       props.history.push("/jobs");
