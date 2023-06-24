@@ -11,9 +11,7 @@ export const Login = (props) => {
     email: "",
     password: "",
   });
-  const [errors, setError] = useState({
-    email: "",
-  });
+ 
   const userSingin = useSelector((state) => state.userSingin);
   const { userInfo, error } = userSingin;
   const dispatch = useDispatch();
@@ -49,7 +47,7 @@ export const Login = (props) => {
               label="Email address"
               type="text"
               placeholder="Enter your email"
-              message={errors.email}
+              message={error.email}
               handleChange={handleChange}
               value={userData.email}
             />

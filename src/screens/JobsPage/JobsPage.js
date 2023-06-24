@@ -41,7 +41,7 @@ export const JobsPage = (props) => {
     if (userInfo) {
       setSignin(true);
     }
-  }, []);
+  }, [userInfo]);
 
   const ViewApplication = (id) => {
     setOpenModal(true);
